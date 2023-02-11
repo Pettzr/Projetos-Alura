@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalista</title>
+    
+
+    <style>
+        body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background_mentalista.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 350px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          Mentalista
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      </div>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Ilustra%C3%A7%C3%A3o-c%C3%A9rebro+1.png">
+      </a>
+</body>
+
+<script>
+
+  /* Código normal
+  
+  var numeroSecreto = parseInt(Math.random() * 1001 );
+   
+   while( chute != numeroSecreto) {
+   
+       var chute = prompt('Digite um número entre 0 e 1000')
+   
+       //se o chute for igual
+   
+       if (chute == numeroSecreto){
+         alert('Acertou!!!')
+         } else if (chute > numeroSecreto){
+           alert('Errou, o número secreto é menor que o digitado! Tente novamente!')
+         } else if (chute , numeroSecreto){
+           alert('Errou, o número secreto é maior que o digitado! Tente novamente!')
+         }
+   } */
+
+   /* Desafio 1 (não ter 0)
+   
+   var numeroSecreto = parseInt(Math.random() * 1001 );
+   if (numeroSecreto === 0){
+   numeroSecreto = ++
+ }
+   while( chute != numeroSecreto) {
+   
+       var chute = prompt('Digite um número entre 0 e 1000')
+   
+       //se o chute for igual
+   
+       if (chute == numeroSecreto){
+         alert('Acertou!!!')
+         } else if (chute > numeroSecreto){
+           alert('Errou, o número secreto é menor que o digitado! Tente novamente!')
+         } else if (chute , numeroSecreto){
+           alert('Errou, o número secreto é maior que o digitado! Tente novamente!')
+         } */
+
+ 
+ /* Desafio 2 (contagem de tentativas)
+         
+  var numeroSecreto = parseInt(Math.random() * 1001 );
+  var tentativas = 0
+   while( chute != numeroSecreto) {
+       tentativas ++
+       var chute = prompt('Digite um número entre 0 e 1000')
+   
+       //se o chute for igual
+   
+       if (chute == numeroSecreto){
+         alert('Acertou!!! em ' + tentativas + ' tentativas.')
+         } else if (chute > numeroSecreto){
+           alert('Errou, o número secreto é menor que o digitado! Tente novamente! Já foram ' + tentativas + ' tentativas.' )
+         } else if (chute , numeroSecreto){
+           alert('Errou, o número secreto é maior que o digitado! Tente novamente! Já foram ' + tentativas + ' tentativas.')
+         }
+   } */
+
+
+   var numeroSecreto = parseInt(Math.random() * 1001 );
+   var tentativas = 0
+   
+
+   while( chute != numeroSecreto) {
+       tentativas ++
+       
+       var chute = prompt('Digite um número entre 0 e 1000')
+
+       var chances = 10 - tentativas
+
+       if (tentativas === 10){
+        alert('Acabaram as tentativas, você perdeu!')
+        break 
+       }
+   
+       if (chute == numeroSecreto){
+         alert('Acertou!!! em ' + tentativas + ' tentativas.')
+         } else if (chute > numeroSecreto){
+           alert('Errou, o número secreto é menor que o digitado! Tente novamente! Já foram ' + tentativas + ' tentativas. Restam apenas: ' +
+           chances + ' chances.' )
+         } else if (chute , numeroSecreto){
+           alert('Errou, o número secreto é maior que o digitado! Tente novamente! Já foram ' + tentativas + ' tentativas. Restam apenas: ' +
+           chances + ' chances.' )
+         }
+   }
+
+       
+   </script>
+
+
+</html>
